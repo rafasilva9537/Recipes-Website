@@ -1,0 +1,7 @@
+Use &, the call operator, to invoke commands whose names or paths are stored in quoted string
+
+Setup env variables:
+    pip freeze > requirements.txt
+    pip install -r requirements.txt
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process; Recipes-Website\.venv\Scripts\Activate.ps1; cd Recipes-Website

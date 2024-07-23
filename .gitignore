@@ -58,8 +58,9 @@ cover/
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
-db.sqlite3-journal
+# DB Included for prototyping, will be removed in the future, change to MYSQL
+!db.sqlite3
+!db.sqlite3-journal
 
 # Flask stuff:
 instance/

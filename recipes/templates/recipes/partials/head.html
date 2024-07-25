@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+        integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css"
+        integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/brands.min.js"
+        integrity="sha512-N5K6sQXjzT79tR16zvBu7B0AqvYtHKvk3+eKuQWoVNQDGU5kR9W8OP3CTYtm3vVM2EtObrmtm0Jup17F718OyA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <style>
@@ -22,5 +30,72 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    body {
+        background-color: var(--color-background);
+    }
+
+    header {
+        height: 4rem;
+        border: 2px solid;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-container {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: large;
+    }
+
+    .menu {
+        display: flex;
+        list-style: none;
+    }
+
+    .menu li {
+        margin: 0 1rem;
+    }
+
+    .auth-container {
+        display: flex;
+        list-style: none;
+    }
+
+    .auth-container li {
+        padding: 15px 0;
+        margin: 0 1rem;
+    }
+
+    .search-form {
+        position: relative;
+        border: 2px solid;
+        border-radius: 16px;
+        width: 30rem;
+    }
+
+    .search-input,
+    .search-button {
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    .search-input {
+        width: 95%;
+        padding: .5rem;
+    }
+
+    .search-button {
+        padding-top: .1rem;
+        padding-right: .5rem;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        font-size: 1.3em;
     }
 </style>

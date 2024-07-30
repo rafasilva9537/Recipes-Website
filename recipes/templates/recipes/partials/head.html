@@ -38,9 +38,9 @@
 
     header {
         height: 4rem;
-        border: 2px solid;
         display: flex;
         justify-content: center;
+        background-color: var(--color-primary);
     }
 
     .nav-container {
@@ -75,6 +75,7 @@
         border: 2px solid;
         border-radius: 16px;
         width: 30rem;
+        background-color: var(--color-background);
     }
 
     .search-input,
@@ -104,15 +105,26 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        border: 2px solid;
     }
 
     .recipe-container {
+        border-radius: 15px;
         width: 30%;
+        overflow: hidden;
+    }
+
+    .recipe-content {
         background-color: #194d2d;
     }
 
     .recipe-image {
         width: 100%;
+        display: block;
+    }
+
+    footer {
+        background-color: var(--color-primary);
+        height: 4rem;
+        text-align: center;
     }
 </style>

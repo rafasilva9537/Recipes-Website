@@ -1,46 +1,35 @@
+{% extends "recipes/base/base.html" %}
 {% load static %}
-{% include 'recipes/partials/head.html' %}
 
-<body>
-    {# {{}} → use variable from context% #}
-
-    {% include 'recipes/partials/header.html' %}
-
-    <main class="main-homepage">
-        <div class="image-container"></div>
-
-        <div class="recipes-homepage-container">
-            <div class="recipe-container">
-                <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}">
-                <div class="recipe-content">
-                    <span>Food Name</span>
-                </div>
-            </div>
-    
-            <div class="recipe-container">
-                <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}" alt="Recipe Image">
-                <div class="recipe-content">
-                    <span>Food Name</span>
-                </div>
-            </div>
-    
-            <div class="recipe-container">
-                <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}" alt="Recipe Image">
-                <div class="recipe-content">
-                    <span>Food Name</span>
-                </div>
-            </div>
-    
-            <div class="recipe-container">
-                <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}" alt="Recipe Image">
-                <div class="recipe-content">
-                    <span>Food Name</span>
-                </div>
-            </div>
+{# {{}} → use variable from context% #}
+{% block content %}
+<div class="recipes-homepage-container">
+    <div class="recipe-container">
+        <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}">
+        <div class="recipe-content">
+            <span>Food Name</span>
         </div>
-    </main>
+    </div>
 
-    {% include 'recipes/partials/footer.html' %}
-</body>
+    <div class="recipe-container">
+        <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}" alt="Recipe Image">
+        <div class="recipe-content">
+            <span>Food Name</span>
+        </div>
+    </div>
 
-</html>
+    <div class="recipe-container">
+        <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}" alt="Recipe Image">
+        <div class="recipe-content">
+            <span>Food Name</span>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}" alt="Recipe Image">
+        <div class="recipe-content">
+            <span>Food Name</span>
+        </div>
+    </div>
+</div>
+{% endblock content %}

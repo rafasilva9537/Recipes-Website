@@ -4,32 +4,13 @@
 {# {{}} → use variable from context% #}
 {% block content %}
 <div class="recipes-homepage-container">
+    {% for recipe in recipes %}
     <div class="recipe-container">
-        <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}">
+        <img class="recipe-image" src="{{ recipe.image }}">
         <div class="recipe-content">
-            <span>Food Name</span>
+            <span>{{ recipe.title }}</span>
         </div>
     </div>
-
-    <div class="recipe-container">
-        <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}" alt="Recipe Image">
-        <div class="recipe-content">
-            <span>Food Name</span>
-        </div>
-    </div>
-
-    <div class="recipe-container">
-        <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}" alt="Recipe Image">
-        <div class="recipe-content">
-            <span>Food Name</span>
-        </div>
-    </div>
-
-    <div class="recipe-container">
-        <img class="recipe-image" src="{% static 'recipes/images/template-image.jpg' %}" alt="Recipe Image">
-        <div class="recipe-content">
-            <span>Food Name</span>
-        </div>
-    </div>
+    {% endfor %}
 </div>
 {% endblock content %}

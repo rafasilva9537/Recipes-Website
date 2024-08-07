@@ -2,5 +2,29 @@
 {% load static %}
 
 {% block content %}
-    <div class="main-recipe-container">hei</div>
+    <div class="main-recipe-container">
+        <h1> {{ recipe.title }} </h1>
+        <img class="recipe-image" src="{{ recipe.image }}">
+        <div class="recipe-details">
+            <div class="recipe-details-item">
+                <div class="recipe-details-label">Cook Time:</div>
+                <div class="recipe-details-value">{{ recipe.cook_time }} min</div>
+            </div>
+            <div class="recipe-details-item">
+                <div class="recipe-details-label">Servings:</div>
+                <div class="recipe-details-value">{{ recipe.servings }}</div>
+            </div>
+        </div>
+
+            <ul class="recipe-ingredients">
+                {% for ingredient in recipe.ingredients %}
+                    <li>{{ ingredient }}</li>
+                {% endfor %}
+            </ul>
+            <ol class="recipe-steps">
+                {% for step in recipe.steps %}
+                <li>{{ step }}</li>
+                {% endfor %}
+            </ol>
+    </div>
 {% endblock content %}

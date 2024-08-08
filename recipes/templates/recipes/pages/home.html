@@ -8,7 +8,7 @@
     <div class="recipe-container">
         <img class="recipe-image" src="{{ recipe.image }}">
         <div class="recipe-content">
-            <span>{{ recipe.title }}</span>
+            <a href="{% url "recipes:recipe" recipe.id %}"><span>{{ recipe.title }}</span></a>
         </div>
     </div>
     {% endfor %}

@@ -5,6 +5,7 @@ fake = Faker()
 
 def create_fake_recipe():
     fake_recipe: dict = {
+        'id': fake.random_number(2),
         'title': fake.sentence(nb_words=4),
         'ingredients': [ fake.sentence(nb_words=3) for _ in range(randint(3, 12)) ],
         'steps': [ fake.sentence(nb_words=15, variable_nb_words= True) for _ in range(0, randint(3, 9))],

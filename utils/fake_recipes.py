@@ -13,6 +13,7 @@ def create_fake_recipe():
         'cook_time_unit': 'Minutes',
         'servings': randint(1, 10), 
         'creation_date_time': fake.date_time(),
+        'updated_date_time': fake.date_time(),
         'author': {
             'first_name': fake.first_name(),
             'last_name': fake.last_name()
